@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Main Flower</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="flowers.js"></script>
+  <script defer src="masks.js"></script>
+  <script defer src="core.js"></script>
+  <script defer src="ripple.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <main id="stage" data-scene="home" data-intro>
+    <audio id="music" src="assets/audio/background.mp3" preload="auto" loop></audio>
+    <video id="film" playsinline preload="auto" poster="assets/images/garden.jpg" muted></video>
+    <img id="stop-frame" alt="" hidden>
+    <canvas id="water" aria-hidden="true" hidden></canvas>
+    <canvas id="manifesto" aria-hidden="true"></canvas>
+    <h1 id="site-title">Every flower wants to be <i>the one.</i></h1>
+    <button id="home" type="button" aria-label="Enter the garden">
+      <span class="cover-copy">Explore five flowers and hear why each wants to be seen.</span>
+      <span class="cover-action">Enter the garden <span aria-hidden="true">↗</span></span>
+    </button>
+    <button id="hotspot" type="button" hidden><span></span></button>
+    <button id="advance" type="button" hidden>Enter the film <span aria-hidden="true">↗</span></button>
+    <button id="back" class="control" type="button" aria-label="Go back" hidden>Back</button>
+    <button id="skip" class="control" type="button" hidden>Skip</button>
+    <button id="continue" class="control" type="button" hidden>Continue</button>
+    <button id="restart" class="control" type="button" hidden>Replay from the beginning</button>
+    <button id="play" class="control" type="button" hidden>Play</button>
+    <p id="status" role="status" hidden></p>
+    <p id="transcript" class="sr-only" lang="en"></p>
+  </main>
+</body>
+</html>
